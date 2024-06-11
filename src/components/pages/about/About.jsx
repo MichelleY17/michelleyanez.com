@@ -1,15 +1,15 @@
 import React from 'react'
 import '../about/About.css'
-import MenuHome from '../menu/MenuHome'
-import githubIcon from '../../assets/github-light.svg'
-import twitterIcon from '../../assets/twitter-light.svg'
-import linkedinIcon from '../../assets/linkedin-light.svg'
-import CV  from '../../assets/MIchelle-Yanez-Resume-pro.pdf'
+import githubIcon from './../../../assets/github-light.svg'
+import twitterIcon from './../../../assets/twitter-light.svg'
+import linkedinIcon from './../../../assets/linkedin-light.svg'
+import CV  from './../../../assets/MIchelle-Yanez-Resume-pro.pdf'
+
+
 function About() {
   return (
     <section id="about" >
         <div>
-            <MenuHome />
             <p>dfgbghngfhnc</p>
             <span>
               <a href="https://github.com/MichelleY17"><img src={githubIcon}tralt="Twitter icon" /></a>
