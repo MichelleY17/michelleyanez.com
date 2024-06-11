@@ -5,19 +5,14 @@ import heroImg from "./../../../assets/fresh-burger.png";
 import phantomLight from "../../../assets/phantom.png";
 import phantomDark from "../../../assets/phantomcreepy.png";
 
-import twitterLight from "./../../../assets/twitter-light.svg";
-import twitterDark from "./../../../assets/twitter-dark.svg";
-import linkedinLight from "./../../../assets/linkedin-light.svg";
-import linkedinDark from "./../../../assets/linkedin-dark.svg";
 
 import { useTheme } from "../../../common/ThemeContext";
 import GithubIcon from "../../icons/Github";
+import LinkedinIcon from "../../icons/Linkedin"
+import TwitterIcon from "../../icons/Twitter"
 
 function Home() {
   const { theme } = useTheme();
-
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
-  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const phantomIcon = theme === "light" ? phantomLight : phantomDark;
 
   return (
@@ -42,13 +37,13 @@ function Home() {
             <GithubIcon />
           </a>
           <a href="https://twitter.com/@Yan58917">
-            <img src={twitterIcon} tralt="Twitter icon" />
+            <TwitterIcon />
           </a>
           <a
             href=" https://www.linkedin.com/in/michelle-yanez-75393b304?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1GVvG0WuR4WuLS6hcSh3cw%3D%3D
 "
           >
-            <img src={linkedinIcon} tralt="linkedin icon" />
+            <LinkedinIcon />
           </a>
         </span>
       </div>
