@@ -1,39 +1,34 @@
 import React from "react";
 import styles from "./HomeStyles.module.css";
 import heroImg from "./../../../assets/fresh-burger.png";
-import sun from "./../../../assets/sun.svg";
-import moon from "./../../../assets/moon.svg";
+
 import phantomLight from "../../../assets/phantom.png";
 import phantomDark from "../../../assets/phantomcreepy.png";
-import githubLight from "./../../../assets/github-light.svg";
-import githubDark from "./../../../assets/github-dark.svg";
+
 import twitterLight from "./../../../assets/twitter-light.svg";
 import twitterDark from "./../../../assets/twitter-dark.svg";
 import linkedinLight from "./../../../assets/linkedin-light.svg";
 import linkedinDark from "./../../../assets/linkedin-dark.svg";
+
 import { useTheme } from "../../../common/ThemeContext";
+import GithubIcon from "../../icons/Github";
 
 function Home() {
-  const { theme, toggleTheme } = useTheme();
-  const themeIcon = theme === "light" ? sun : moon;
-  const githubIcon = theme === "light" ? githubLight : githubDark;
+  const { theme } = useTheme();
+
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const phantomIcon = theme === "light" ? phantomLight : phantomDark;
+
   return (
     <section id="home" className={styles.container}>
+      <h1 className="accent-title">HELLO WORLD</h1>
       <div className={styles.colorModeContainer}>
         <img
           className={styles.hero}
           src={heroImg}
           alt="Profile picture of Michelle Yanez"
         />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
-        ></img>
       </div>
       <div className={styles.HomeContainer}>
         <h1>
@@ -44,7 +39,7 @@ function Home() {
         <h2>Web Developer</h2>
         <span>
           <a href="https://github.com/MichelleY17">
-            <img src={githubIcon} tralt="Twitter icon" />
+            <GithubIcon />
           </a>
           <a href="https://twitter.com/@Yan58917">
             <img src={twitterIcon} tralt="Twitter icon" />

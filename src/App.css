@@ -1,5 +1,20 @@
+body[data-theme="light"] {
+  background-color: transparent;
+  color: black;
+}
+body[data-theme="light"] .accent-title {
+  color: red;
+}
+body[data-theme="dark"] .accent-title {
+  color: blue;
+}
+
+body[data-theme="dark"] {
+  background-color: black;
+  color: white;
+}
+
 /* App container */
-.appContainer{
-    display:flex;
-    
+.appContainer {
+  display: flex;
 }
